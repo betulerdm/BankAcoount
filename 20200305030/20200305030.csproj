@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9EA1AE2-312F-462A-AC9B-46C4469541EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_20200305030</RootNamespace>
+    <AssemblyName>20200305030</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bakiye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bakiye.Designer.cs">
+      <DependentUpon>bakiye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankaHesabi.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="haraketkaydet.cs" />
+    <Compile Include="havale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="havale.Designer.cs">
+      <DependentUpon>havale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hesapharaketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hesapharaketleri.Designer.cs">
+      <DependentUpon>hesapharaketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriEkle.Designer.cs">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="müşteriara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşteriara.Designer.cs">
+      <DependentUpon>müşteriara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="müşterigüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşterigüncelle.Designer.cs">
+      <DependentUpon>müşterigüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="müşteriişlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşteriişlem.Designer.cs">
+      <DependentUpon>müşteriişlem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="müşterilistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşterilistele.Designer.cs">
+      <DependentUpon>müşterilistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parayatırma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parayatırma.Designer.cs">
+      <DependentUpon>parayatırma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paraçekmeişlemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paraçekmeişlemi.Designer.cs">
+      <DependentUpon>paraçekmeişlemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="yeniŞifreÜret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniŞifreÜret.Designer.cs">
+      <DependentUpon>yeniŞifreÜret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yetkiliişlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yetkiliişlem.Designer.cs">
+      <DependentUpon>Yetkiliişlem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="şifredeğiştirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="şifredeğiştirme.Designer.cs">
+      <DependentUpon>şifredeğiştirme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bakiye.resx">
+      <DependentUpon>bakiye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="havale.resx">
+      <DependentUpon>havale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesapharaketleri.resx">
+      <DependentUpon>hesapharaketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriEkle.resx">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müşteriara.resx">
+      <DependentUpon>müşteriara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müşterigüncelle.resx">
+      <DependentUpon>müşterigüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müşteriişlem.resx">
+      <DependentUpon>müşteriişlem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müşterilistele.resx">
+      <DependentUpon>müşterilistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parayatırma.resx">
+      <DependentUpon>parayatırma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paraçekmeişlemi.resx">
+      <DependentUpon>paraçekmeişlemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniŞifreÜret.resx">
+      <DependentUpon>yeniŞifreÜret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yetkiliişlem.resx">
+      <DependentUpon>Yetkiliişlem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="şifredeğiştirme.resx">
+      <DependentUpon>şifredeğiştirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-transaction-money-business-clip-art-business.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61f7cce967553f0004c53e6b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3570147-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6891325.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-logo-transparent-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-password-cracking-software-cracking-hacker-others-text-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-fc-barcelona-chrome-hearts-logo-forget-password-logo-computer-hardware-andres-iniesta-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\havale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1155648460-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-985284662-1024x1024.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
